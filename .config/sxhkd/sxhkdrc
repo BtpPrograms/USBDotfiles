@@ -1,0 +1,40 @@
+###################
+Program Launchers
+####################
+super + Return
+	urxvt
+
+super + space
+	dmenu_run
+
+super + shift + f 
+	firefox
+
+####################
+WM Hotkeys
+####################
+super + alt + Escape
+	bspc quit
+
+super + w
+	bspc window -c
+
+super + {s,f}
+	bspc window -t {floating,fullscreen}
+
+# Cycle window focus
+super + {grave,Tab}
+	bspc window -f {prev,next}
+ 
+super + ctrl + {_,shift + }space
+	bspc {window -p cancel,desktop -c}
+
+super + {_,shift + }{1-6}
+	bspc {desktop -f,window -d} ^{1-6}
+
+~button1
+	bspc pointer -g focus
+
+# Reload sxhkd config
+super + Escape
+	pkill -USR1 -x sxhkd

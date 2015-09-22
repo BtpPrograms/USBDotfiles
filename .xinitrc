@@ -23,4 +23,5 @@ setxkbmap -option caps:escape
 # Disable pc speaker beeing
 xset -b
 
-exec openbox-session
+sxhkd &
+exec bspwm
