@@ -16,3 +16,5 @@ man() {
 # Alias ls to always use colors
 alias ls="ls --color=always"
 
+# Alias to use python2 by default
+alias python="python2"
