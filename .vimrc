@@ -35,6 +35,9 @@ set softtabstop=8
 " Set Leader Key to , "
 let mapleader=","
 
+" Place line on current location of cursor "
+set cursorline
+
 " Set up Powerline 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
