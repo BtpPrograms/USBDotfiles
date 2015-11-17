@@ -77,5 +77,18 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
+" Set up lint configuration and set line length of 120
+let g:pymode_lint_config = '$HOME/.pylint.rc'
+let g:pymode_options_max_line_length=120
+
+" Set up column to match line length of 120
+autocmd FileType python set colorcolumn=120
+
+" Change background color of color column 
+highlight ColorColumn ctermbg=241
+
 " Don't autofold code
 let g:pymode_folding = 0
+
+" Change background color of fold
+highlight Folded ctermbg=241
