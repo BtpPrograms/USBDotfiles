@@ -12,7 +12,6 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'klen/python-mode'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'jplaut/vim-arduino-ino'
 
 call vundle#end()
 
@@ -27,10 +26,10 @@ set number
 set pastetoggle=<s>
 
 " Various Tab Related Options
-set tabstop=8
+set tabstop=4
 set shiftwidth=4
 set expandtab
-set softtabstop=8
+set softtabstop=4
 
 " Set Leader Key to , "
 let mapleader=","
